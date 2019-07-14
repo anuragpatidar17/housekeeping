@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./stylesheet/bootstrap.min.css" />
+  </head>
+  <body>
+    <br /><br />
+    <div class="container">
+      <div class="jumbotron ">
+        <div class="container">
+          <h1 class="display-5">Add Worker</h1>
+        </div>
+      </div>
+      <form action="/add-worker" method="post">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input
+            placeholder="Enter name"
+            class="form-control"
+            type="text"
+            name="name"
+            id="name"
+          />
+          <label for="description">Description:</label>
+          <textarea
+            placeholder="Enter description"
+            name="description"
+            class="form-control"
+            rows="4"
+          ></textarea>
+          <br />
+          <input
+            class="btn btn-primary btn-lg btn-block"
+            type="submit"
+            value="submit"
+          />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
